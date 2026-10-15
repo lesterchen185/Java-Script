@@ -1,0 +1,42 @@
+let totalMark = analysis + design + implementation + evaluation;
+let grade = "";
+let marksNeeded = 0;
+
+switch (true) {
+    case (totalMark >= 80):
+        grade = "A*";
+        marksNeeded = 0; 
+        break;
+    case (totalMark >= 67):
+        grade = "A";
+        marksNeeded = 80 - totalMark;
+        break;
+    case (totalMark >= 54):
+        grade = "B";
+        marksNeeded = 67 - totalMark;
+        break;
+    case (totalMark >= 41):
+        grade = "C";
+        marksNeeded = 54 - totalMark;
+        break;
+    case (totalMark >= 31):
+        grade = "D";
+        marksNeeded = 41 - totalMark;
+        break;
+    case (totalMark >= 22):
+        grade = "E";
+        marksNeeded = 31 - totalMark;
+        break;
+    case (totalMark >= 13):
+        grade = "F";
+        marksNeeded = 22 - totalMark;
+        break;
+    case (totalMark >= 4):
+        grade = "G";
+        marksNeeded = 13 - totalMark;
+        break;
+    default:
+        grade = "U";
+        marksNeeded = 4 - totalMark;
+        break;
+}
