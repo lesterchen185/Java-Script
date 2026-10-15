@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Jsdemo</title>
-</head>
-<body>
-    <h2 id="hellohere"> text here</h2>
-     <input type = "number" id="num1"value="5">
-    <input type = "number" id="num2"value="2">
-    <button onclick="addNumbers()">Add Numbers</button>
-    <p id="result"></p>
+  <head>
+    <title>Addition Program</title>
+  </head>
+  <body>
     <script>
-        function addNumbers() {
-            var number1 = parseFloat(document.getElementById("num1").value);
-            var number2 = parseFloat(document.getElementById("num2").value);
-            var sum = number1 + number2
-            placetoput=document.getElementById("result")
-            placetoput.innerHTML = "the sum is: " + sum;
+        //document.write("<pre>");
+        //document.write("OOOOOOOOOOO\n");
+        //document.write("O         O\n");
+        //document.write("O  #   #  O\n");
+        //document.write("O    #    O\n");
+        //document.write("O  #   #  O\n");
+        //document.write("O         O\n");
+        //document.write("OOOOOOOOOOO");
+        //document.write("</pre>");
+        // 1. Ask the user for two numbers
+        // Number() converts the typed text into an actual numeric value
+        let num1 = Number(prompt("Enter the first number:"));
+        let num2 = Number(prompt("Enter the second number:"));
 
-        }
-        alert("hello world!");
-        document.write ("hello world");
-        placetoput=document.getElementById(hellohere);
-        placetoput.innerHTML= "hello, world!";
+        // 2. Add the numbers together
+        let sum = num1 + num2;
+
+        // 3. Output the exact required sentences
+        document.write("<pre>");
+        document.write("You entered numbers " + num1 + " and " + num2 + "\n");
+        document.write("They add up to " + sum);
+        document.write("</pre>");
     </script>
-</body>
+  </body>
 </html>
