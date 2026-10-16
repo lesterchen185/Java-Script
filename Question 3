@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
 let totalMark = analysis + design + implementation + evaluation;
 let grade = "";
 let marksNeeded = 0;
@@ -40,3 +45,6 @@ switch (true) {
         marksNeeded = 4 - totalMark;
         break;
 }
+</script>
+</body>
+</html>

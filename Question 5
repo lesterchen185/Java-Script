@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+<script>
+let balance = parseFloat(prompt("Enter current balance:"));
+const rate = parseFloat(prompt("Enter interest rate:"));
+const desiredBalance = parseFloat(prompt("Enter desired balance:"));
+
+let year = 1;
+
+while (balance < desiredBalance) {
+    balance = balance + (balance * rate);
+    document.write("Year " + year + ": New balance = " + balance + "<br>");
+    year = year + 1;
+}
+</script>
+</body>

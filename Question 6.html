@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+
+<button onclick="rollDice()">Roll Dice</button>
+<div id="result"></div>
+
+<script>
+function rollDice() {
+    const words = ["one", "two", "three", "four", "five", "six"];
+    const roll = Math.floor(Math.random() * 6);
+   
+    document.getElementById("result").innerHTML = words[roll];
+}
+</script>
+
+</body>

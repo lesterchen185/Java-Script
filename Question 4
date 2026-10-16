@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <script>
+        const count = parseInt(input("Enter how many numbers are to be averaged:"));
+        let total = 0;
+
+        for (let i = 0; i < count; i++) {
+    const num = parseFloat(prompt("Enter a number:"));
+    total = total + num;
+}
+
+const mean = total / count;
+
+document.write("Total: " + total + "<br>");
+document.write("Mean: " + mean + "<br>");
+</script>
+
+</body>
+</html>
